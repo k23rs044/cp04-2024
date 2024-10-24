@@ -169,7 +169,7 @@
         var canvas = $("#mycanvas")[0];
         var ctx = canvas.getContext("2d");
         var img = new Image();
-        img.src = "ksuisbg.gif";
+        img.src = "pp09p2.jpg";
         img.onload = function() {
             ctx.drawImage(img, 0, 0, 300, 300);
         }
@@ -183,13 +183,14 @@
     function btnAClick(e){
         active = true;
         startTime = new Date();
+        $("body").css("backgroundColor","silver");
         
     }
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active = false;
-        
+        $("body").css("backgroundColor","gold"); 
     }
 
     // ButtonCがクリックされた時の処理
@@ -215,7 +216,7 @@
                alarm();
            }
         }
-
+     
         
     } 
 
